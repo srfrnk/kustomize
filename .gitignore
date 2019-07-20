@@ -16,3 +16,5 @@
 
 # macOS
 *.DS_store
+test
+kustomize
