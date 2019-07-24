@@ -9,5 +9,5 @@ build: FORCE
 
 test: build FORCE
 	pushd test/overlays/staging && ../../../bin/kustomize edit set image ttt=111 && popd
-	pushd test/overlays/staging && ../../../bin/kustomize build && popd
+	pushd test/overlays/staging && export ENABLE_RISKY=true && ../../../bin/kustomize build && popd
 	pushd test/overlays/staging && ../../../bin/kustomize edit set image ttt=222 && popd
