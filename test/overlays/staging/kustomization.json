@@ -1,0 +1,35 @@
+{
+  "commonAnnotations": {
+    "note": "Hello, I am staging!"
+  },
+  "commonLabels": {
+    "org": "acmeCorporation",
+    "variant": "staging"
+  },
+  "images": [
+    {
+      "name": "ttt",
+      "newName": "222"
+    }
+  ],
+  "namePrefix": "staging-",
+  "nameSuffix": "-v1",
+  "patchesStrategicMerge": [
+    "map.json"
+  ],
+  "resources": [
+    "../../base"
+  ],
+  "vars": [
+    {
+      "envref": {
+        "name": "ENABLE_RISKY"
+      },
+      "fieldref": {},
+      "name": "ENABLE_RISKY",
+      "objref": {
+        "name": ""
+      }
+    }
+  ]
+}

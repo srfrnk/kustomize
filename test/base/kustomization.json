@@ -1,0 +1,18 @@
+{
+    "commonLabels": {
+        "app": "hello"
+    },
+    "resources": [
+        "deployment.json",
+        "service.json"
+    ],
+    "configMapGenerator": [
+        {
+            "name": "the-map",
+            "literals": [
+                "altGreeting=Good Morning!",
+                "enableRisky=\"false\""
+            ]
+        }
+    ]
+}
