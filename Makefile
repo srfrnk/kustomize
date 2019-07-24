@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 FORCE:
 
 install: build
@@ -7,4 +8,6 @@ build: FORCE
 	go build -o bin/kustomize sigs.k8s.io/kustomize/v3/cmd/kustomize
 
 test: build FORCE
-	./bin/kustomize build test/overlays/staging
+	pushd test/overlays/staging && ../../../bin/kustomize edit set image ttt=111 && popd
+	pushd test/overlays/staging && ../../../bin/kustomize build && popd
+	pushd test/overlays/staging && ../../../bin/kustomize edit set image ttt=222 && popd
