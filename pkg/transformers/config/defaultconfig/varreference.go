@@ -67,6 +67,9 @@ varReference:
 - path: spec/template/spec/initContainers/volumeMounts/mountPath
   kind: DaemonSet
 
+- path: spec/template/spec/containers/image
+  kind: Deployment
+
 - path: spec/template/spec/containers/args
   kind: Deployment
 
@@ -96,7 +99,7 @@ varReference:
 
 - path: spec/tls/hosts
   kind: Ingress
-  
+
 - path: spec/tls/secretName
   kind: Ingress
 
