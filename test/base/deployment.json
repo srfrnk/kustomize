@@ -16,7 +16,7 @@
         "containers": [
           {
             "name": "the-container",
-            "image": "ttt",
+            "image": "myimage:$(ENABLE_RISKY)",
             "command": [
               "/hello",
               "--port=8080",
