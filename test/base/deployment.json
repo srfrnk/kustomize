@@ -9,7 +9,8 @@
     "template": {
       "metadata": {
         "labels": {
-          "deployment": "hello"
+          "deployment": "hello",
+          "enableRisky": "$(ENABLE_RISKY)"
         }
       },
       "spec": {
