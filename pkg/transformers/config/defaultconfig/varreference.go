@@ -221,5 +221,6 @@ varReference:
   kind: StatefulSet
 
 - path: metadata/labels
+- path: spec/template/metadata/labels
 `
 )
