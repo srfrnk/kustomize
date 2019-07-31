@@ -105,7 +105,7 @@ configMapGenerator:
   - application.properties
   - more.properties
 - name: myJavaServerEnvVars
-  literals:	
+  literals:
   - JAVA_HOME=/opt/java/jdk
   - JAVA_TOOL_OPTIONS=-agentlib:hprof
 ```
@@ -181,7 +181,7 @@ containers:
 ```
 
 可以通过以下方式更改 `image` ：
- 
+
  - `postgres:8` to `my-registry/my-postgres:v1`,
  - nginx tag `1.7.9` to `1.8.0`,
  - image name `my-demo-app` to `my-app`,
@@ -354,7 +354,7 @@ resource:
 
 [hashicorp URL]: https://github.com/hashicorp/go-getter#url-format
 
-目录规范可以是相对、绝对或部分的 URL。URL 规范应遵循 [hashicorp URL] 格式。该目录必须包含 `kustomization.yaml` 文件。
+目录规范可以是相对、绝对或部分的 URL。URL 规范应遵循 [hashicorp URL] 格式。该目录必须包含 `kustomization.yaml`, `kustomization.json` 文件。
 
 ### secretGenerator
 

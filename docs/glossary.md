@@ -152,16 +152,16 @@ test or deploy) when that truth changes.
 ## kustomization
 
 The term _kustomization_ refers to a
-`kustomization.yaml` file, or more generally to a
+`kustomization.yaml` / `kustomization.json` file, or more generally to a
 directory (the [root]) containing the
-`kustomization.yaml` file and all the relative file
+`kustomization.yaml` / `kustomization.json` file and all the relative file
 paths that it immediately references (all the local
 data that doesn't require a URL specification).
 
 I.e. if someone gives you a _kustomization_ for use
 with [kustomize], it could be in the form of
 
- * one file called `kustomization.yaml`,
+ * one file called `kustomization.yaml` / `kustomization.json`,
  * a tarball (containing that YAML file plus what it references),
  * a git archive (ditto),
  * a URL to a git repo (ditto), etc.
@@ -189,7 +189,7 @@ falling into four categories:
 ## kustomization root
 
 The directory that immediately contains a
-`kustomization.yaml` file.
+`kustomization.yaml` / `kustomization.json` file.
 
 When a kustomization file is processed, it may or may
 not be able to access files outside its root.
@@ -207,7 +207,7 @@ allow a patch file to be shared by more than one
 kustomization.
 
 Other kustomizations (other directories containing a
-`kustomization.yaml` file) may be referred to by URL, by
+`kustomization.yaml` / `kustomization.json` file) may be referred to by URL, by
 absolute path, or by relative path.
 
 If kustomization __A__ depends on kustomization __B__, then
@@ -217,7 +217,7 @@ If kustomization __A__ depends on kustomization __B__, then
 
 __A__ may contain __B__, but in this case it might be
 simplest to have __A__ directly depend on __B__'s
-resources and eliminate __B__'s kustomization.yaml file
+resources and eliminate __B__'s kustomization.yaml / kustomization.json file
 (i.e. absorb __B__ into __A__).
 
 Conventionally, __B__ is in a directory that's sibling

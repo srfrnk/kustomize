@@ -30,7 +30,7 @@ or [transformer configs] doesn't meet your needs.
    builtin (`namePrefix`, `commonLabels`, etc.)
    transformers.
 
-## Specification in `kustomization.yaml`
+## Specification in `kustomization.yaml` / `kustomization.json`
 
 Start by adding a `generators` and/or `transformers`
 field to your kustomization.
