@@ -36,7 +36,7 @@ func newCmdAddBase(fsys fs.FileSystem) *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "base",
-		Short: "Adds one or more bases to the kustomization.yaml in current directory",
+		Short: "Adds one or more bases to the kustomization.yaml / kustomization.json in current directory",
 		Example: `
 		add base {filepath1},{filepath2}`,
 		RunE: func(cmd *cobra.Command, args []string) error {

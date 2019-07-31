@@ -1,4 +1,4 @@
-# inventory directive in kustomization.yaml
+# inventory directive in kustomization.yaml / kustomization.json
 
 New in v2.1.0, a kustomization file may have an `inventory` field:
 ```yaml

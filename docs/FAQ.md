@@ -33,7 +33,7 @@ kustomize build --load_restrictor none $target
 
 Example: [#1319](https://github.com/kubernetes-sigs/kustomize/issues/1319), [#1322](https://github.com/kubernetes-sigs/kustomize/issues/1322), [#1347](https://github.com/kubernetes-sigs/kustomize/issues/1347) and etc.
 
-The fields transformed by kustomize is configured explicitly in [defaultconfig](https://github.com/kubernetes-sigs/kustomize/tree/master/pkg/transformers/config/defaultconfig). The configuration itself can be customized by including `configurations` in `kustomization.yaml`, e.g.
+The fields transformed by kustomize is configured explicitly in [defaultconfig](https://github.com/kubernetes-sigs/kustomize/tree/master/pkg/transformers/config/defaultconfig). The configuration itself can be customized by including `configurations` in `kustomization.yaml`/`kustomization.json`, e.g.
 
 ```yaml
 apiVersion: kustomize.config.k8s.io/v1beta1

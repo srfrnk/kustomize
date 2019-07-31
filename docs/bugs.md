@@ -11,7 +11,7 @@ following to improve response time.
 ## A good report specifies
 
  * the output of `kustomize version`,
- * the input (the content of `kustomization.yaml`
+ * the input (the content of `kustomization.yaml` / `kustomization.json`
    and any files it refers to),
  * the expected YAML output.
 

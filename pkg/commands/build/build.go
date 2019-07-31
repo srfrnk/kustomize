@@ -40,14 +40,14 @@ func NewOptions(p, o string) *Options {
 }
 
 var examples = `
-To generate the resources specified in 'someDir/kustomization.yaml', run
+To generate the resources specified in 'someDir/kustomization.yaml' or 'someDir/kustomization.json', run
 
   kustomize build someDir
 
 The default argument to 'build' is '.' (the current working directory).
 
 The argument can be a URL resolving to a directory
-with a kustomization.yaml file, e.g.
+with a kustomization.yaml / kustomization.json file, e.g.
 
   kustomize build \
     github.com/kubernetes-sigs/kustomize//examples/multibases/dev/?ref=v1.0.6

@@ -32,7 +32,7 @@ kustomize [v2.0.3] is available in [kubectl v1.14 and v1.15][kubectl].
 
 ### 1) Make a [kustomization] file
 
-In some directory containing your YAML [resource]
+In some directory containing your YAML/JSON [resource]
 files (deployments, services, configmaps, etc.), create a
 [kustomization] file.
 

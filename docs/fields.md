@@ -1,6 +1,6 @@
 # Kustomization File Fields
 
-An explanation of the fields in a [kustomization.yaml](glossary.md#kustomization) file.
+An explanation of the fields in a [kustomization.yaml/json](glossary.md#kustomization) file.
 
 
 ## Resources
@@ -113,7 +113,7 @@ configMapGenerator:
   - application.properties
   - more.properties
 - name: myJavaServerEnvVars
-  literals:	
+  literals:
   - JAVA_HOME=/opt/java/jdk
   - JAVA_TOOL_OPTIONS=-agentlib:hprof
 ```
@@ -199,7 +199,7 @@ containers:
 ```
 
 one can change the `image` in the following ways:
- 
+
  - `postgres:8` to `my-registry/my-postgres:v1`,
  - nginx tag `1.7.9` to `1.8.0`,
  - image name `my-demo-app` to `my-app`,
@@ -401,7 +401,7 @@ field.
 Directory specification can be relative, absolute,
 or part of a URL.  URL specifications should
 follow the [hashicorp URL] format.  The directory
-must contain a `kustomization.yaml` file.
+must contain a `kustomization.yaml` / `kustomization.json` file.
 
 
 ### secretGenerator

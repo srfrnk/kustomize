@@ -189,7 +189,7 @@ func TestKustomizationNotFound(t *testing.T) {
 		t.Fatalf("expected an error")
 	}
 	if err.Error() !=
-		`unable to find one of 'kustomization.yaml', 'kustomization.yml' or 'Kustomization' in directory '/foo'` {
+		`unable to find one of 'kustomization.yaml', 'kustomization.yml', 'kustomization.json' or 'Kustomization' in directory '/foo'` {
 		t.Fatalf("unexpected error: %q", err)
 	}
 }

@@ -303,7 +303,7 @@ func findMatchedField(line []byte) (bool, string) {
 }
 
 // marshalField marshal a given field of a kustomization object into yaml format.
-// If the field wasn't in the original kustomization.yaml file or wasn't added,
+// If the field wasn't in the original kustomization.yaml / kustomization.json file or wasn't added,
 // an empty []byte is returned.
 func marshalField(field string, kustomization *types.Kustomization) ([]byte, error) {
 	r := reflect.ValueOf(*kustomization)
